@@ -1,0 +1,24 @@
+Q8 COMP1521 17s2 Final Exam
+
+A.
+
+For #include <stdlib.h>, uses a .h file from a system directory 
+For #include "mylib.h", uses a .h file from the current directory
+
+B.
+
+/home/jas/cs1521/week05
+
+C.
+i)
+
+only can 'cd' into the directory
+
+ii)
+
+can 'cd' into the directory and can run 'ls'
+
+iii)
+
+can 'cd' into the directory, run 'ls' and remove/creat files
+

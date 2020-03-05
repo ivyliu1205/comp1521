@@ -1,0 +1,1 @@
+./shred tests/f8

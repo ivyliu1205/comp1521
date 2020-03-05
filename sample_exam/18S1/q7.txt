@@ -1,0 +1,22 @@
+# COMP1521 18s1 Exam Q7
+
+A.
+
+i)   A
+
+ii)  B
+
+iii) B
+
+iv)  D
+
+
+B.
+
+i)   1000
+
+ii)  1000
+
+iii) 1000
+
+iv)  0

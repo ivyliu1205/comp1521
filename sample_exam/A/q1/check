@@ -1,0 +1,72 @@
+#!/bin/sh
+
+case $# in
+1) Q="$1" ;;
+*) echo "Usage: $0 q1|q2|q3" ; exit 1 ;;
+esac
+
+case "$Q" in
+q1) BIN="q1.s";;
+q2) BIN="q2";;
+q3) BIN="q3";;
+*) echo "Usage: $0 q1|q2|q3" ; exit 1 ;;
+esac
+
+if [ ! -d tests ]
+then
+	echo "No tests/ directory here. Are you in the right directory?"
+	exit 1
+fi
+
+if [ "$Q" = "q1" ]
+then
+	if [ ! -f "main.s" ]
+	then
+		echo "No main.s here. Are you in the right directory?"
+		exit 1
+	fi
+else
+	if [ ! -f "Makefile" ]
+	then
+		echo "No Makefile here. Are you in the right directory?"
+		exit 1
+	fi
+	
+	echo "Running 'make' ... just in case you haven't"
+	if make
+	then
+		echo "OK"
+	else
+		echo "Compile failed"
+		exit 1
+	fi
+	
+	if [ ! -f "$BIN" ]
+	then
+		echo "Couldn't make $BIN"
+	fi
+	
+	if [ ! -x "$BIN" ]
+	then
+		echo "$BIN is not executable"
+		exit 1
+	fi
+fi
+
+echo "Running tests ..."
+
+for tt in tests/*.sh
+do
+	t=`basename $tt .sh`
+	sh "$tt" | head -200 > tests/$t.out
+	if cmp -s tests/$t.exp tests/$t.out
+	then
+		echo Passed test $t
+	else
+		echo Failed test $t
+		printf "%-35s%-35s\n\n" "Your Output" "Expected Output" > tests/$t.cmp
+		pr -m -t -w 70 tests/$t.out tests/$t.exp >> tests/$t.cmp
+		echo Check differences using \"cat tests/$t.cmp\"
+	fi
+done
+

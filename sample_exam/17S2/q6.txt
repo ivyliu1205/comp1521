@@ -1,0 +1,35 @@
+Q6 COMP1921 17s2 Final Exam
+
+A.
+
+sizeof(Node) = 8
+assuming ints and pointers are both 4-bytes long.
+
+B.
+
+heap fills up(collides with stack)
+heap is corrupted from earlier misuse of pointers
+
+C.
+
+Node *L; // is set to list shown on diagram
+
+// code to convert Before ...
+
+// ... into After
+Node *new = malloc(sizeof(Node));
+new->value = 4;
+new->next = L;
+L = new;
+
+D.
+
+void freeNodes(Node *L)
+{
+    if (L != NULL) {
+        freeNodes(L->next);
+        free(L);
+    }
+}
+
+

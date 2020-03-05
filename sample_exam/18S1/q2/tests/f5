@@ -1,0 +1,18 @@
+<b>Exercise</b>
+</p>
+<p>
+In this question, you must implement the <tt>shred()</tt>
+function, which takes two parameters:
+<ul>
+<li> <tt>infd</tt> ... a file descriptor open for reading
+<li> <tt>outfd</tt> ... a file descriptor open for writing
+</ul>
+and does the following:
+</p>
+<pre>
+for each 128-byte block in <i>infd</i> {
+   read the block into a buffer
+   overwrite the buffer with random characters
+   write the buffer to <i>outfd</i>
+}
+</pre>

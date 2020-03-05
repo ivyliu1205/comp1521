@@ -1,0 +1,13 @@
+#!/bin/sh
+
+cat /dev/null > stu2
+../addstu stu2 5011111 "Davy Jones" 3978 50.0
+../addstu stu2 5022222 "Fred Jones" 3978 51.0
+../addstu stu2 5033333 "Bruce Jones" 3778 95.0
+../addstu stu2 5044444 "Farmer Jones" 3707 59.5
+../addstu stu2 5055555 "Jane Jones" 3707 99.5
+../addstu stu2 5066666 "June Jones" 3707 90.5
+../addstu stu2 5077777 "Julie Jones" 3778 90.5
+../addstu stu2 5088888 "Jenny Jones" 3778 90.5
+../addstu stu2 5099999 "Sid Jones" 3778 50.5
+

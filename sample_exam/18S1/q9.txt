@@ -1,0 +1,25 @@
+# COMP1521 18s1 Exam Q9
+
+A.
+
+i)
+
+To represent there are unread contents or not.
+
+ii)
+
+To represent there are new contents or not
+
+
+B.
+
+i) 
+
+
+
+ii) ...
+
+
+C.
+
+...

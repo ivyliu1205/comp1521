@@ -1,0 +1,27 @@
+# COMP1521 18s1 Exam Q6
+
+A.
+
+i)
+
+Region1 is used to store machine code
+
+ii)
+
+Region2 is used to store global variables
+
+iii)
+
+Region3 is used to store malloc'd variables
+
+iv)
+
+Region4 is used to store local variables
+
+B.
+
+Region3
+
+C.
+
+Region1

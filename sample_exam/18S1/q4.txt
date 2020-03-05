@@ -1,0 +1,15 @@
+# COMP1521 18s1 Exam Q4
+
+A.
+
+i)    x | y == 1111 1110 1111 1100
+
+ii)   x & y == 0001 0010 0001 0100
+
+iii)  x ^ y == 1110 1100 1110 1000
+
+iv)   ~ x   == 1110 1101 1100 1011
+
+B.
+
+The function f() swap the value of x and y. If we create a "Bits" A and let A equals to 0x1234, and create another "Bits" B and let B equals to 0x4321, and run f(&A, &B), we will find that the value of A and B are swapped.

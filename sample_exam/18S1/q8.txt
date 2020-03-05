@@ -1,0 +1,34 @@
+# COMP1521 18s1 Exam Q8
+
+A.
+
+A regular function call only change the corresponding files in the current directories, but the system call can change the file in other directories.
+
+
+B.
+
+i)  malloc() and free()
+
+
+
+ii) It's lifetime is from it's been created to it has been destoried.
+
+
+C.
+
+4
+
+
+D.
+
+i)  
+
+fork() returns -1, if it get errors.
+return 1, if it is in a child process.
+return a number greater than 1, if it is in a parent process.
+
+ii) 
+
+returns -1, if it fail.
+
+
