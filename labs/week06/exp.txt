@@ -1,0 +1,8 @@
+drwxr-xr-x  cs1521   cs1521       4096  18s1
+-rw-r--r--  cs1521   cs1521         72  index.html
+lrwxrwxrwx  cs1521   cs1521          4  19t2
+drwxr-xr-x  cs1521   cs1521       4096  18s2
+drwxr-xr-x  cs1521   cs1521       4096  19T2
+-rw-r--r--  cs1521   cs1521         72  outline.html
+drwxr-x--x  cs1521   cs1521       4096  17s2
+lrwxrwxrwx  cs1521   cs1521          4  current
